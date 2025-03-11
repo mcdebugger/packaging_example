@@ -10,6 +10,9 @@ requires-python = ">=3.11"
 readme = "README.md"
 license = {text = "MIT"}
 
+[project.scripts]
+magicalculator = "example_package_mcdebugger.example:main"
+
 [project.urls]
 Homepage = "https://github.com/mcdebugger/packaging_example"
 Issues = "https://github.com/mcdebugger/packaging_example/issues"
