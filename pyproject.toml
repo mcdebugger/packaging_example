@@ -1,12 +1,12 @@
 [project]
 name = "example_package_mcdebugger"
-version = "0.3.0"
 description = "A small example package"
 authors = [
     {name = "Maksim Kachur", email = "me@maksimkachur.ru"},
 ]
 dependencies = []
 requires-python = ">=3.11"
+dynamic = ["version"]
 readme = "README.md"
 license = {text = "MIT"}
 
@@ -24,3 +24,7 @@ build-backend = "pdm.backend"
 
 [tool.pdm]
 distribution = true
+
+[tool.pdm.version]
+source = "file"
+path = "src/example_package_mcdebugger/__init__.py"

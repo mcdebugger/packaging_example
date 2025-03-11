@@ -14,3 +14,5 @@ def main():
     print(f'Executing add_two calculation on digit: {digit}')
     digit = add_two(digit)
     print(f'Result: {digit}')
+    
+    print('Congratulations! You\'re computing magician!')
